@@ -2,8 +2,15 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8" />
-	<meta description"Este es un archivo de prueba de HTML5, en la clase de mejorandola" />
-<title> Archivo HTML5 mejorandola</title>
+	<meta name="description" content="Este es un archivo de prueba de HTML5, en la clase de mejorandola" />
+	<meta name="vieport" content="width=device-width, minimun-scale=1, maximum-scale=1"/>
+	<title> Archivo HTML5 mejorandola</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="estilos.css">
+	<script src="prefixfree.js"></script>
+
+
 </head>
 <body>
 <header>
@@ -11,7 +18,7 @@
 			<img src="logo.png">
 		</figure>
 		
-		<h1>Pulse"014 Comunidad online de desarrollo web</h1>
+		<h1>Pulse2014 Comunidad online de desarrollo web</h1>
 		<figure id="avatar">
 			<img src="avatar.jpg">
 		</figure>
@@ -25,10 +32,15 @@
 			<li><a href="#">javascript</a></li>
 			<li><a href="#">CS3</a></li>
 			<li><a href="#">Django</a></li>
-			<li id="publicar_nav"><a href="#">Publicar</a></li>
+			<li id="publicar_nav"><a href="#" class="icon-lapiz" id="mostrar-form">Publicar</a></li>
 
 		</ul>
 	</nav>
+	<form action="" id="formulario" class="formulario">
+		<input type="text" id="titulo" placeholder="Título" required>
+		<input type="url" id="url" placeholder="Link" required>
+		<input type="submit" value="Agregar">
+		</form>
 	<section id="contenido" >
 		<article class="item">
 			<figure class="imagen_item">
@@ -42,14 +54,115 @@
 			</div>
 			<div class="datos_item">
 				<a href="#" class="tag_item">pony</a>
-				<spanclass="fecha_item">hace <strong>5</strong>min</span>
+				<spanclass="fecha_item">hace 
+				<strong>5</strong>min</span>
 			</div>
 			<div class="votacion">
-				<a href="#" class="up"></a>
+				<a href="#" class="up icon-f-arriba"></a>
 				720
-				<a href="#" class="down"></a>
+				<a href="#" class="down icon-f-abajo"></a>
 				<a href="#" class="comentarios_item">69</a>
-				<a href="#" class="guardar_item"></a>
+				<a href="#" class="guardar_item icon-estrella"></a>
+
+			</div>
+
+		</article>
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="imagen.jpg">
+			</figure>
+			<h2 class="title_item">
+				<a href="#">Título de artículo</a>
+			</h2>
+			<div class="autor_item">
+				por <a href="#">Carlos Amores</a>
+			</div>
+			<div class="datos_item">
+				<a href="#" class="tag_item">pony</a>
+				<spanclass="fecha_item">hace 
+				<strong>5</strong>min</span>
+			</div>
+			<div class="votacion">
+				<a href="#" class="up icon-f-arriba"></a>
+				720
+				<a href="#" class="down icon-f-abajo"></a>
+				<a href="#" class="comentarios_item">69</a>
+				<a href="#" class="guardar_item icon-estrella"></a>
+
+			</div>
+
+		</article>
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="imagen.jpg">
+			</figure>
+			<h2 class="title_item">
+				<a href="#">Título de artículo</a>
+			</h2>
+			<div class="autor_item">
+				por <a href="#">Carlos Amores</a>
+			</div>
+			<div class="datos_item">
+				<a href="#" class="tag_item">pony</a>
+				<spanclass="fecha_item">hace 
+				<strong>5</strong>min</span>
+			</div>
+			<div class="votacion">
+				<a href="#" class="up icon-f-arriba"></a>
+				720
+				<a href="#" class="down icon-f-abajo"></a>
+				<a href="#" class="comentarios_item">69</a>
+				<a href="#" class="guardar_item icon-estrella"></a>
+
+			</div>
+
+		</article>
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="imagen.jpg">
+			</figure>
+			<h2 class="title_item">
+				<a href="#">Título de artículo</a>
+			</h2>
+			<div class="autor_item">
+				por <a href="#">Carlos Amores</a>
+			</div>
+			<div class="datos_item">
+				<a href="#" class="tag_item">pony</a>
+				<spanclass="fecha_item">hace 
+				<strong>5</strong>min</span>
+			</div>
+			<div class="votacion">
+				<a href="#" class="up icon-f-arriba"></a>
+				720
+				<a href="#" class="down icon-f-abajo"></a>
+				<a href="#" class="comentarios_item">69</a>
+				<a href="#" class="guardar_item icon-estrella"></a>
+
+			</div>
+
+		</article>
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="imagen.jpg">
+			</figure>
+			<h2 class="title_item">
+				<a href="#">Título de artículo</a>
+			</h2>
+			<div class="autor_item">
+				por <a href="#">Carlos Amores</a>
+			</div>
+			<div class="datos_item">
+				<a href="#" class="tag_item">twidoo</a>
+				<spanclass="fecha_item">hace 
+				<strong>5</strong>min</span>
+			</div>
+			<div class="votacion">
+				<a href="#" class="up icon-f-arriba"></a>
+				720
+				<a href="#" class="down icon-f-abajo"></a>
+				<a href="#" class="comentarios_item">69</a>
+				<a href="#" class="guardar_item icon-estrella"></a>
 
 			</div>
 
@@ -63,5 +176,19 @@
 			Twidoo 2014
 		</p>
 	</footer>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="formulario.js"></script>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
